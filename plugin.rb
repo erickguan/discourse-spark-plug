@@ -26,7 +26,7 @@ after_initialize do
 
   class DiscourseSparkPlug::IgnitionController < ::ApplicationController
     requires_plugin PLUGIN_NAME
-    skip_before_action :ensure_logged_in, only: [:trigger]
+    skip_before_action :verify_authenticity_token, only: [:trigger]
 
     def trigger
       Rails.logger.debug request
