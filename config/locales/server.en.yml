@@ -1,0 +1,3 @@
+en:
+  site_settings:
+    spark_plug_enabled: "Enable process incoming webhooks at /spark-plug/ignition"

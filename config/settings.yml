@@ -1,0 +1,3 @@
+plugins:
+  spark_plug_enabled:
+    default: false
